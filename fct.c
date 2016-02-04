@@ -5,7 +5,7 @@
 ** Login   <voyevoda@epitech.net>
 **
 ** Started on  Mon Feb  1 20:03:25 2016 Voyevoda
-** Last update Tue Feb  2 13:51:49 2016 Voyevoda
+** Last update Thu Feb  4 12:15:38 2016 Voyevoda
 */
 
 #include <stdlib.h>
@@ -13,7 +13,7 @@
 #include <unistd.h>
 #include "./include/fonction.h"
 
-void    my_putchar(char c)
+void    my_putchar(unsigned char c)
 {
   if (write(1, &c, 1) == -1)
     exit(EXIT_FAILURE);

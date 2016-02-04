@@ -5,19 +5,17 @@
 ## Login   <voyevoda@epitech.net>
 ## 
 ## Started on  Fri Jan 15 12:43:37 2016 Voyevoda
-## Last update Wed Feb  3 11:40:51 2016 Voyevoda
+## Last update Thu Feb  4 16:30:13 2016 Voyevoda
 ##
 
 CC	= gcc
 
 SRC	= main_client.c \
 	  fct.c		\
-	  fct2.c	\
 	  my_getnbr.c
 
 SRC2	= main_server.c \
 	  fct.c		\
-	  fct2.c	\
 	  my_getnbr.c
 
 CFLAGS	= -W -Wall -Wextra -pedantic -ansi

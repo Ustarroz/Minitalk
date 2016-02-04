@@ -1,11 +1,11 @@
 /*
 ** my_getnbr.c for pushwap in /home/ustarr_r/rendu/Prog_elem/CPE_2015_Pushwap
-** 
+**
 ** Made by Ustarroz Robin
 ** Login   <ustarr_r@epitech.net>
-** 
+**
 ** Started on  Wed Nov 18 11:27:59 2015 Ustarroz Robin
-** Last update Wed Nov 18 11:32:24 2015 Ustarroz Robin
+** Last update Thu Feb  4 16:26:33 2016 Voyevoda
 */
 
 int	my_neg_number(char *str)

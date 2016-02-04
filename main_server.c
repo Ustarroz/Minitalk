@@ -5,7 +5,7 @@
 ** Login   <voyevoda@epitech.net>
 **
 ** Started on  Mon Feb  1 12:51:00 2016 Voyevoda
-** Last update Wed Feb  3 16:27:08 2016 Voyevoda
+** Last update Thu Feb  4 16:17:14 2016 Voyevoda
 */
 
 #define _BSD_SOURCE
@@ -25,43 +25,33 @@ void			receive(int signum)
 
   if (signum == SIGUSR1)
     {
-      k<<=1;
+      if (i != 7)
+	k = k << 1;
       i++;
     }
   if (signum == SIGUSR2)
-  {
-    b = 00000001;
-    k = k | b;
-    k<<=1;
-    i++;
-  }
-if (i == 8)
-  {
-    my_putchar(k);
-    i = 0;
-    k = '\0';
-  }
+    {
+      b = 00000001;
+      k = k | b;
+      if (i != 7)
+	k = k << 1;
+      i++;
+    }
+  if (i == 8)
+    {
+      my_putchar(k);
+      i = 0;
+      k = '\0';
+    }
 }
 
 int	main(int ac, char **av)
 {
-  int	i;
-
   (void) ac;
   (void) av;
-  i = 0;
   my_pid();
-
-  if (signal(SIGUSR1, receive))
-    {
-      my_putchar('a');
-      i++;
-    }
-  if (signal(SIGUSR2, receive))
-    {
-      my_putchar('b');
-      i++;
-    }
+  signal(SIGUSR1, receive);
+  signal(SIGUSR2, receive);
   while (1)
     {
     }
