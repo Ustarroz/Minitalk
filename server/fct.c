@@ -5,13 +5,13 @@
 ** Login   <voyevoda@epitech.net>
 **
 ** Started on  Mon Feb  1 20:03:25 2016 Voyevoda
-** Last update Thu Feb  4 12:15:38 2016 Voyevoda
+** Last update Tue Feb  9 11:25:30 2016 Voyevoda
 */
 
 #include <stdlib.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include "./include/fonction.h"
+#include "../include/fonction.h"
 
 void    my_putchar(unsigned char c)
 {

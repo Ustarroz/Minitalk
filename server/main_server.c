@@ -5,7 +5,7 @@
 ** Login   <voyevoda@epitech.net>
 **
 ** Started on  Mon Feb  1 12:51:00 2016 Voyevoda
-** Last update Mon Feb  8 18:28:20 2016 Voyevoda
+** Last update Tue Feb  9 11:02:57 2016 Voyevoda
 */
 
 #define _BSD_SOURCE
@@ -15,7 +15,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <signal.h>
-#include "./include/fonction.h"
+#include "../include/fonction.h"
 
 void			receive(int signum)
 {
