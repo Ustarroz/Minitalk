@@ -5,7 +5,7 @@
 ** Login   <voyevoda@epitech.net>
 **
 ** Started on  Mon Feb  1 12:50:26 2016 Voyevoda
-** Last update Thu Feb  4 17:30:30 2016 Voyevoda
+** Last update Tue Feb  9 10:46:30 2016 Voyevoda
 */
 
 #define _BSD_SOURCE
@@ -21,12 +21,12 @@ int		recursive(unsigned char av, int pid, int i)
 {
   if (i < 8)
     {
-      recursive (av >> 1, pid, i + 1);
+      recursive(av >> 1, pid, i + 1);
       if ((av % 2) == 1)
 	kill(pid, SIGUSR2);
       else
 	kill(pid, SIGUSR1);
-      usleep(10);
+      usleep(100);
     }
   return (0);
 }
@@ -40,6 +40,11 @@ int	send_binary(char **av)
   i = 0;
   j = 0;
   pid = my_getnbr(av[1]);
+  if (pid == -1)
+    {
+      my_putstr("wrong pid\n");
+      exit (0);
+    }
   while (av[2][j] != '\0')
     {
       recursive(av[2][j], pid, i);

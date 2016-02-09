@@ -5,26 +5,26 @@
 ## Login   <voyevoda@epitech.net>
 ## 
 ## Started on  Fri Jan 15 12:43:37 2016 Voyevoda
-## Last update Thu Feb  4 16:30:13 2016 Voyevoda
+## Last update Tue Feb  9 10:52:30 2016 Voyevoda
 ##
 
 CC	= gcc
 
-SRC	= main_client.c \
-	  fct.c		\
-	  my_getnbr.c
+SRC	= ./client/main_client.c \
+	  ./client/fct.c	 \
+	  ./client/my_getnbr.c
 
-SRC2	= main_server.c \
-	  fct.c		\
-	  my_getnbr.c
+SRC2	= ./server/main_server.c \
+	  ./server/fct.c	 \
+	  ./server/my_getnbr.c
 
 CFLAGS	= -W -Wall -Wextra -pedantic -ansi
 
 RM	= rm -f
 
-NAME	= client
+NAME	= ./client/client
 
-NAME2	= server
+NAME2	= ./server/server
 
 OBJ	= $(SRC:.c=.o)
 
