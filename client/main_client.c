@@ -5,7 +5,7 @@
 ** Login   <voyevoda@epitech.net>
 **
 ** Started on  Mon Feb  1 12:50:26 2016 Voyevoda
-** Last update Tue Feb  9 13:51:21 2016 Voyevoda
+** Last update Fri Feb 12 17:41:14 2016 Voyevoda
 */
 
 #define _BSD_SOURCE
@@ -26,7 +26,7 @@ int		recursive(unsigned char av, int pid, int i)
 	kill(pid, SIGUSR2);
       else
 	kill(pid, SIGUSR1);
-      usleep(10);
+      usleep(100);
     }
   return (0);
 }
