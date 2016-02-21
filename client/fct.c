@@ -5,7 +5,7 @@
 ** Login   <voyevoda@epitech.net>
 **
 ** Started on  Mon Feb  1 20:03:25 2016 Voyevoda
-** Last update Tue Feb  9 11:03:27 2016 Voyevoda
+** Last update Sun Feb 21 22:50:47 2016 Voyevoda
 */
 
 #include <stdlib.h>
@@ -13,13 +13,13 @@
 #include <unistd.h>
 #include "../include/fonction.h"
 
-void    my_putchar(unsigned char c)
+void	my_putchar(unsigned char c)
 {
   if (write(1, &c, 1) == -1)
     exit(EXIT_FAILURE);
 }
 
-int     my_strlen(char *str)
+int	my_strlen(char *str)
 {
   int   i;
 
@@ -29,7 +29,7 @@ int     my_strlen(char *str)
   return (i);
 }
 
-void    my_pid()
+void	my_pid()
 {
   pid_t pid;
 
@@ -38,7 +38,7 @@ void    my_pid()
   my_putchar('\n');
 }
 
-void    my_putstr(char *str)
+void	my_putstr(char *str)
 {
   if (write(1, str, my_strlen(str)) == -1)
     exit(EXIT_FAILURE);
